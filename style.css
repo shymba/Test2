@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+.item-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.item-section img {
+    border-radius: 5px;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-footer-text {
+    margin-right: 5px;
+}
+
+.quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #91be9a;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.wrapper-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-remove {
+    background-color: #d97373;
+}
+
+.btn-purchase {
+    background-color: #91be9a;
+}
+
+.btn-select {
+    color: #333;
+    margin: 10px 0;
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio] + img {
+    cursor: pointer;
+}
+
+[type=radio]:checked + img {
+    outline: 2px solid #d04e4e;
+}
+
+.deliveryDay {
+    margin: 15px 0 0;
+}
+
+textarea {
+    width: 200px;
+    outline: none;
+    border: 1px solid #91be9a;
+    border-radius: 5px;
+}
